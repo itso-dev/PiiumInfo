@@ -4,6 +4,7 @@ import piniaPluginPersistedstate from 'pinia-plugin-persistedstate'
 import router from "./_router";
 import App from './App.vue'
 import './style.css'
+import './index.css'
 import "./font.css";
 import globalMixin from "./_mixins/globalMixin";
 

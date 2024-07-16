@@ -14,14 +14,10 @@ export default {
     TextClipMask
   },
   data() {
-    return {
-    };
+    return {};
   },
-  methods: {
-
-  },
+  methods: {},
   computed: {},
-  mounted() {
-  },
+  mounted() {},
 };
 </script>

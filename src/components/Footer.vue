@@ -22,21 +22,15 @@
 </template>
 
 <script>
-
 export default {
-  props: [ "" ],
-  setup() {
-  },
+  props: [""],
+  setup() {},
   components: {},
   data() {
-    return {
-    };
+    return {};
   },
-  methods: {
-
-  },
+  methods: {},
   computed: {},
-  mounted() {
-  },
+  mounted() {},
 };
 </script>
