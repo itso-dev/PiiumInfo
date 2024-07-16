@@ -1,7 +1,7 @@
 <template>
   <div id="page">
-    <Footer ref="Footer" />
     <router-view :key="$route.fullPath"  ref="view"></router-view>
+    <Footer ref="Footer" />
   </div>
 </template>
 

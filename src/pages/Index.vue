@@ -1,15 +1,18 @@
 <template>
   <div class="py-[34px]">
-    INDEX
+    <TextClipMask />
   </div>
 </template>
 
 <script>
+import TextClipMask from '@/components/TextClipMask.vue'
 
 export default {
   setup() {
   },
-  components: {},
+  components: {
+    TextClipMask
+  },
   data() {
     return {
     };
