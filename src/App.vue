@@ -1,7 +1,7 @@
 <template>
   <div id="page">
+    <router-view :key="$route.fullPath" ref="view"></router-view>
     <Footer ref="Footer" />
-    <router-view :key="$route.fullPath"  ref="view"></router-view>
   </div>
 </template>
 
@@ -12,18 +12,11 @@ export default {
   components: {
     Footer,
   },
-  setup() {
-  },
-  watch: {
-  },
-  methods: {
-  },
-  computed: {
-  
-  },
-  created() {
-  },
-  mounted() {
-  },
+  setup() {},
+  watch: {},
+  methods: {},
+  computed: {},
+  created() {},
+  mounted() {},
 };
 </script>

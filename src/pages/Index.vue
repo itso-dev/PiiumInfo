@@ -1,24 +1,16 @@
 <template>
-  <div class="py-[34px]">
-    INDEX
-  </div>
+  <div class="text-red-400">INDEX</div>
 </template>
 
 <script>
-
 export default {
-  setup() {
-  },
+  setup() {},
   components: {},
   data() {
-    return {
-    };
+    return {};
   },
-  methods: {
-
-  },
+  methods: {},
   computed: {},
-  mounted() {
-  },
+  mounted() {},
 };
 </script>
