@@ -85,6 +85,10 @@
                     slidesPerView: 5,
                     spaceBetween: 40,
                 },
+                '1600': {
+                    slidesPerView: 6,
+                    spaceBetween: 40,
+                },
                 }"
             >
                 <swiper-slide>

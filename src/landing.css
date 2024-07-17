@@ -523,10 +523,9 @@
   .gridLayer:nth-child(4) .gridBlock {
     left: 25vw;
   }
-}
-
-@media (min-width: 1850px) {
-  
+  .sw2 .swiper-wrapper {
+    margin-left: 2300px;
+  }
 }
 
 @media (min-width: 1900px) {
