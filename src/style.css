@@ -14,11 +14,101 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  width: 100%;
 }
 
 #app {
-  max-width: 1280px;
+  /* max-width: 1280px; */
   margin: 0 auto;
-  padding: 2rem;
+  /* padding: 2rem; */
   text-align: center;
+  width: 100%;
 }
+
+/* 스와이프 */
+.swiper,
+.swiper-container {
+  height: 100%;
+}
+
+.swiper-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-pagination-bullet {
+  width: 8px;
+  height: 8px;
+  /* border: 1.5px solid #FFF !important; */
+  /* background: transparent !important; */
+  /* opacity: 1 !important; */
+
+  border-radius: 24px;
+  opacity: 0.2 !important;
+  background: #fff !important;
+}
+
+.swiper-pagination-bullet-active {
+  opacity: 1 !important;
+}
+
+.swiper-pagination {
+  bottom: 0px !important;
+  padding-bottom: 2px;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.15) 100%);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.swiper-slide img {
+  max-height: none !important;
+}
+
+.round-check {
+  width: 30px;
+  height: 30px;
+  vertical-align: middle;
+  appearance: none;
+  position: relative;
+  background: #fff;
+  border: 1px solid #B2B2B2;
+  border-radius: 100px;
+  background-image: url("/icons/check.png");
+  background-size: 10px !important;
+  background-position: center center !important;
+  background-repeat: no-repeat;
+}
+
+.round-check:checked {
+  background-image: url("/icons/check.png");
+  background-size: 15px !important;
+  background-position: center center !important;
+  background-color: #222;
+  background-repeat: no-repeat;
+  border: none;
+}
+
+.square-check {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  appearance: none;
+  position: relative;
+  background: #fff;
+  border: 1px solid #DDD;
+  background-image: url("/icons/s-check.png");
+  background-size: 10px !important;
+  background-position: center center !important;
+  background-repeat: no-repeat;
+}
+
+.square-check:checked {
+  background-image: url("/icons/s-check.png");
+  background-size: 13px !important;
+  background-position: center center !important;
+  background-color: #546AB8;
+  background-repeat: no-repeat;
+  border: 1px solid #FFF;
+}
+

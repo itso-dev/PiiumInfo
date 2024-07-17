@@ -15,7 +15,13 @@ module.exports = {
           light: "#566A6C",
           white: "#F0FBFB",
         },
-      }
+      },
+      screens: {
+        'lg': '1200px',
+        'mi': '1080px',
+        'md': '900px',
+        'mo': '575px',
+      },
     }
   },
   plugins: [

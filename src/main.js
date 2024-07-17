@@ -6,6 +6,7 @@ import App from './App.vue'
 import './style.css'
 import './index.css'
 import "./font.css";
+import "./landing.css";
 import globalMixin from "./_mixins/globalMixin";
 
 const pinia = createPinia()
