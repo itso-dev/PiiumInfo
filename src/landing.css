@@ -216,7 +216,7 @@
 
 .marquee {
   position: absolute;
-  bottom: 20%;
+  bottom: 15%;
   width: 100%;
   white-space: nowrap;
 }
@@ -522,6 +522,7 @@
 @media (min-width: 1600px) {
   .gridLayer:nth-child(4) .gridBlock {
     left: 25vw;
+    top: 21.5vw;
   }
   .sw2 .swiper-wrapper {
     margin-left: 2300px;
@@ -530,7 +531,7 @@
 
 @media (min-width: 1900px) {
   .grid-container {
-    height: 370vh;
+    height: 320vh;
   }
   .gridLayer:nth-child(4) .gridBlock {
     left: 26vw;

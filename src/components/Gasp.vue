@@ -39,7 +39,7 @@
             <div class="centerText2">
               <div class="text-div">
                 <p><span>사회적경제 기업 ∙<br> 협동 조합</span>을 위한<br> 기업입니다.</p>
-                <p>비영리단체와 사회적경제 기업 ∙ 협동<br> 조합을 위해 <span>브랜딩 ∙ 마케팅 ∙ 대행판매</span><br> 등으로 매출 개선에 이바지 합니다.</p>
+                <p>비영리단체와 사회적경제 기업 ∙ 협동<br class="block md:hidden"> 조합을 위해 <span>브랜딩 ∙ 마케팅 ∙ 대행판매</span><br class="hidden xl:block"> 등으로 매출 개선에 이바지 합니다.</p>
               </div>
             </div>
           </div>

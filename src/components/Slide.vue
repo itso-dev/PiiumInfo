@@ -1,7 +1,7 @@
 <template>
     <div class="py-[70px] md:py-[80px] pl-5 bg-[#FFF] flex flex-col md:pl-10 lg:pl-[180px] gap-10 md:gap-0">
         <div class="flex flex-col md:items-center md:flex-row">
-            <div class="flex flex-col md:py-10 items-start md:w-[320px]">
+            <div class="flex flex-col md:py-10 items-start md:w-[320px]" data-aos="fade-up" data-aos-delay="200">
                 <p class="text-[#546AB8] text-[40px] leading-[52px] tracking-[1px] font-semibold">Partners</p>
                 <p class="text-[#546AB8] text-xl leading-[46px] tracking-[-0.6px] font-semibold">파트너사</p>
             </div>
@@ -63,7 +63,7 @@
             </swiper>
         </div>
         <div class="flex flex-col md:items-center md:flex-row">
-            <div class="flex flex-col md:py-10 items-start md:w-[320px]">
+            <div class="flex flex-col md:py-10 items-start md:w-[320px]" data-aos="fade-up" data-aos-delay="200">
                 <p class="text-[#546AB8] text-[40px] leading-[52px] tracking-[1px] font-semibold">Customer</p>
                 <p class="text-[#546AB8] text-xl leading-[46px] tracking-[-0.6px] font-semibold">고객사</p>
             </div>
@@ -188,6 +188,9 @@ export default {
   },
   methods: {},
   computed: {},
-  mounted() {},
+  created() {
+  },
+  mounted() {
+  },
 };
 </script>

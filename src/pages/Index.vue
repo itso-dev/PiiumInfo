@@ -5,11 +5,11 @@
   <Slide />
   <section class="box-border px-5 bg-[#EEEEF3] py-[80px] flex justify-center items-center">
     <div class="max-w-[1200px] w-full flex flex-col md:flex-row gap-5 md:gap-0 justify-center items-center md:items-start">
-      <div class="w-full flex flex-col text-center md:items-start md:w-[320px]">
+      <div class="w-full flex flex-col text-center md:items-start md:w-[320px]" data-aos="fade-up" data-aos-delay="200">
         <p class="text-[#222] text-[40px] leading-[52px] tracking-[1px] font-semibold">Contact</p>
         <p class="text-[#222] text-xl leading-[46px] tracking-[-0.6px] font-semibold">문의하기</p>
       </div>
-      <div class="w-full mo:w-4/5 md:w-[calc(100%_-_320px)] bg-[#FFF] flex flex-col box-border px-5 mo:px-10 py-[30px] mo:py-[50px] gap-[25px] md:gap-[30px]">
+      <div class="w-full mo:w-4/5 md:w-[calc(100%_-_320px)] bg-[#FFF] flex flex-col box-border px-5 mo:px-10 py-[30px] mo:py-[50px] gap-[25px] md:gap-[30px]" data-aos="fade-up" data-aos-delay="400">
         <div class="flex flex-col gap-2.5">
           <div class="flex items-center gap-5">
             <b class="text-[#222] text-base font-semibold tracking-[-0.4px]">유형</b>
@@ -232,6 +232,8 @@ import Gasp from "@/components/Gasp.vue";
 import Net from "@/components/Net.vue";
 import Slide from "@/components/Slide.vue";
 import Input from "@/components/Input.vue";
+import AOS from 'aos';
+import "aos/dist/aos.css";
 
 export default {
   setup() {},
@@ -289,6 +291,11 @@ export default {
     },
   },
   computed: {},
-  mounted() {},
+  created() {
+    AOS.init();
+  },
+  mounted() {
+    AOS.refresh();
+  },
 };
 </script>
