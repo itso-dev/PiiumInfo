@@ -75,7 +75,7 @@
     </div>
   </section>
 
-  <article class="agreeModal left-0 mi:max-w-[1080px] w-full h-screen bg-[#FFF] box-border pt-[60px] px-5 mo:px-12 pb-5 fixed top-0 mi:left-[50%] mi:translate-x-[-50%] z-50 flex flex-col gap-5 justify-center items-center" v-if="this.agreeModal">
+  <article class="agreeModal left-0 mi:max-w-[1080px] w-full h-screen mi:h-[95vh] bg-[#FFF] box-border pt-[60px] px-5 mo:px-12 pb-5 fixed top-0 mi:top-[2.5vh] mi:left-[50%] mi:translate-x-[-50%] z-50 flex flex-col gap-5 justify-center items-center" v-if="this.agreeModal">
     <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none" 
       class="absolute top-5 right-5 cursor-pointer" @click="closeAgree">
       <path d="M22.7 5.2998L4.70001 23.2998" stroke="#767676" stroke-width="2" stroke-linecap="round"/>
