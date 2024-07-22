@@ -2,7 +2,7 @@
   <div class="w-full pt-[65px] pb-[30px] flex flex-col items-center justify-center gap-5 relative">
     <img src="/icons/logo.png" class="w-[129px]">
     <div class="w-full box-border px-5 flex flex-col gap-4 ta:gap-2">
-      <div class="w-full flex flex-col gap-2 ta:flex-row ta:gap-0 items-start mo:items-center">
+      <div class="w-full flex flex-col gap-2 ta:flex-row ta:gap-0 items-start mo:items-center justify-center">
         <b class="text-[#767676] text-xs ta:pr-2">프로젝트서티즈</b>
         <div class="h-[14px] flex items-center gap-2.5 ta:px-2 ta:border-l ta:border-r border-[#DDD]">
           <b class="text-[#767676] text-xs">대표</b>
