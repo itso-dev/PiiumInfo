@@ -21,11 +21,11 @@
   height: 100vh;
   align-items: center;
   justify-content: center;
-  -webkit-mask-image: url('/icons/mask.png');
+  -webkit-mask-image: url('/icons/mask2.svg');
   -webkit-mask-position: center center;
   -webkit-mask-repeat: no-repeat;
   -webkit-mask-size: 10%; /* 초기 mask-size를 작게 설정 */
-  mask-image: url('/icons/mask.png');
+  mask-image: url('/icons/mask2.svg');
   mask-position: center center;
   mask-repeat: no-repeat;
   mask-size: 10%; /* 초기 mask-size를 작게 설정 */
