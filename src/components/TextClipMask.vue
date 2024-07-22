@@ -2,7 +2,7 @@
   <main class="main">
     <div ref="container" class="container">
       <div ref="stickyMask" class="stickyMask">
-        <video autoplay muted loop>
+        <video loop="loop" muted="muted" autoplay="autoplay" playsinline>
           <source src="/icons/main-video.mp4" type="video/mp4" />
         </video>
       </div>

@@ -27,12 +27,12 @@
             </label>
           </div>
         </div>
-        
+
         <div class="w-full flex flex-col gap-[25px] md:flex-row md:gap-10 items-center">
           <Input
             title="기업명" class="w-full md:w-1/2"
             :data="this.business_name" ref="select"
-            @update="this.updateBusinesName" type="text"
+            @update="this.updateBusinessName" type="text"
             minLength="2" placeholder="기업명"
           />
           <Input
@@ -52,7 +52,7 @@
           <Input
             title="연락드릴 이메일" class="w-full md:w-1/2"
             :data="this.email" ref="select"
-            @update="this.updateManagerName" type="text"
+            @update="this.updateEmail" type="text"
             minLength="2" placeholder="sample@gmail.com"
           />
         </div>
@@ -76,7 +76,7 @@
   </section>
 
   <article class="agreeModal left-0 mi:max-w-[1080px] w-full h-screen bg-[#FFF] box-border pt-[60px] px-5 mo:px-12 pb-5 fixed top-0 mi:left-[50%] mi:translate-x-[-50%] z-50 flex flex-col gap-5 justify-center items-center" v-if="this.agreeModal">
-    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none" 
+    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none"
       class="absolute top-5 right-5 cursor-pointer" @click="closeAgree">
       <path d="M22.7 5.2998L4.70001 23.2998" stroke="#767676" stroke-width="2" stroke-linecap="round"/>
       <path d="M22.7 23.2998L4.70001 5.2998" stroke="#767676" stroke-width="2" stroke-linecap="round"
@@ -256,12 +256,12 @@ export default {
       agree: false,
       selectedCategory: [],
       categories: [
-        { name: 'branding', label: '브랜딩' },
-        { name: 'marketing', label: '마케팅' },
-        { name: 'sales', label: '대행판매' },
-        { name: 'development', label: '웹∙앱개발' },
-        { name: 'alliance', label: '제휴' },
-        { name: 'etc', label: '기타' }
+        { name: 'branding', label: '브랜딩', value: '1'},
+        { name: 'marketing', label: '마케팅', value: '2' },
+        { name: 'sales', label: '대행판매', value: '3' },
+        { name: 'development', label: '웹∙앱개발', value: '4' },
+        { name: 'alliance', label: '제휴', value: '5' },
+        { name: 'etc', label: '기타', value: '6' }
       ],
     };
   },
@@ -274,7 +274,7 @@ export default {
       this.agreeModal = false;
       this.modalBg = false;
     },
-    updateBusinesName(data) {
+    updateBusinessName(data) {
       this.business_name = data;
     },
     updateManagerName(data) {
@@ -289,6 +289,63 @@ export default {
     updateContent(data) {
       this.content = data;
     },
+    async contactSubmitForm() {
+      // 폼 데이터 가져오기
+
+
+      if(this.selectedCategory == ''){
+        alert("문의 타입을 선택해주세요.")
+        return false;
+      } else if(this.business_name == ''){
+        alert("기업명을 입력해주세요.")
+        return false;
+      } else if(this.manager_name == ''){
+        alert("담당자 성함을 입력해주세요.")
+        return false;
+      } else if(this.phone == ''){
+        alert("휴대폰 번호를 입력해주세요.")
+        return false;
+      } else if(this.email == ''){
+        alert("이메일을 입력해주세요.")
+        return false;
+      } else if(this.content == ''){
+        alert("문의 내용을 선택해주세요.")
+        return false;
+      } else if (!this.agree){
+        alert("개인정보처리방침에 동의해주세요.")
+      }
+      const url = "https://api.nopi.io/inquiry/save";
+      const data = {
+        "type_list": JSON.stringify(this.selectedCategory),
+        "site_type": 2,
+        "name": this.manager_name,
+        "company_name": this.business_name,
+        "phone_number": this.phone,
+        "email": this.email,
+        "content": this.content
+      };
+      console.log(data);
+      try {
+        const response = await fetch(url, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify(data)
+        });
+
+        if (response.ok) {
+          const jsonResponse = await response.json();
+          console.log(jsonResponse); // 서버로부터 받은 응답 데이터 확인
+          alert("문의가 등록되었습니다.");
+          location.href="/";
+        } else {
+          console.log('Error:', response.statusText);
+        }
+      } catch (error) {
+        console.error('Error:', error);
+      }
+    }
   },
   computed: {},
   created() {

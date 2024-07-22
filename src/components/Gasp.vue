@@ -33,7 +33,7 @@
         </div>
         <div class="gridLayer centerPiece" :class="{ expanded: isExpanded }">
           <div class="gridBlock centerBlock">
-            <video ref="mainVideo" autoplay muted loop>
+            <video ref="mainVideo" loop="loop" muted="muted" autoplay="autoplay" playsinline>
               <source src="/icons/main-video.mp4" type="video/mp4" />
             </video>
             <div class="centerText2">
@@ -51,7 +51,7 @@
         </div>
         <div class="gridLayer">
           <div class="gridBlock">
-            <video autoplay muted loop>
+            <video loop="loop" muted="muted" autoplay="autoplay" playsinline>
               <source src="/icons/webapp.mp4" type="video/mp4" />
             </video>
             <div class="box-div">
@@ -66,7 +66,7 @@
         </div>
         <div class="gridLayer">
           <div class="gridBlock">
-            <video autoplay muted loop>
+            <video loop="loop" muted="muted" autoplay="autoplay" playsinline>
               <source src="/icons/influencer.mp4" type="video/mp4" />
             </video>
             <div class="box-div">
@@ -116,7 +116,7 @@
 
   <section class="mo-page">
     <article class="mo-page-1">
-      <video autoplay muted loop>
+      <video loop="loop" muted="muted" autoplay="autoplay" playsinline>
         <source src="/icons/main-video.mp4" type="video/mp4" />
       </video>
       <div class="centerText">
@@ -140,7 +140,7 @@
 
     <article class="mo-page-2">
       <div class="mo-bigbox">
-        <video autoplay muted loop>
+        <video loop="loop" muted="muted" autoplay="autoplay" playsinline>
           <source src="/icons/main-video.mp4" type="video/mp4" />
         </video>
         <p><span>사회적경제 기업 ∙<br> 협동 조합</span>을 위한<br class="mo:hidden"> 기업입니다.</p>
@@ -170,7 +170,7 @@
         </div>
       </div>
       <div class="mo-box">
-        <video autoplay muted loop>
+        <video loop="loop" muted="muted" autoplay="autoplay" playsinline>
           <source src="/icons/influencer.mp4" type="video/mp4" />
         </video>
         <div class="box-div">
@@ -182,7 +182,7 @@
         </div>
       </div>
       <div class="mo-box">
-        <video autoplay muted loop>
+        <video loop="loop" muted="muted" autoplay="autoplay" playsinline>
           <source src="/icons/webapp.mp4" type="video/mp4" />
         </video>
         <div class="box-div">
