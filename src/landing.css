@@ -9,7 +9,8 @@
   max-width: none !important;
   position: relative;
   height: 200vh;
-  background: url('/icons/main-bg.png');
+  background: url('/icons/main-bg.jpg');
+  background-size: cover;
 }
 
 .stickyMask {
@@ -596,7 +597,7 @@
     top: 71.5%;
   }
   .gridLayer:nth-child(8) .gridBlock {
-    right: 12%;
+    right: -12%;
   }
 }
 
