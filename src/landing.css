@@ -55,7 +55,7 @@
 
 .grid-container {
   width: 100vw;
-  height: 350vh;
+  height: 320vh;
   position: relative;
 }
 
@@ -513,9 +513,18 @@
   margin-left: 1000px;
 }
 
+@media (min-width: 1100px) {
+  .marquee {
+    bottom: -10%;
+  }
+}
+
 @media (min-width: 1500px) {
   .gridLayer:nth-child(4) .gridBlock {
     left: 24.5vw;
+  }
+  .marquee {
+    bottom: 0;
   }
 }
 
@@ -527,17 +536,67 @@
   .sw2 .swiper-wrapper {
     margin-left: 2300px;
   }
+  .grid-container {
+    height: 340vh;
+  }
+  .marquee {
+    bottom: 5%;
+  }
+  .gridLayer:nth-child(5) .gridBlock {
+    left: 9%;
+    top: 64%;
+  }
+  .gridLayer:nth-child(3) .gridBlock {
+    left: 9%;
+  }
+  .gridLayer:nth-child(6) .gridBlock {
+    left: 69.5%;
+  }
+  .gridLayer:nth-child(7) .gridBlock {
+    left: 69.5%;
+    top: 78.5%;
+  }
+}
+
+@media (min-width:1800px) {
+  .gridLayer:nth-child(6) .gridBlock {
+    left: 70%;
+  }
+  .gridLayer:nth-child(7) .gridBlock {
+    left: 70%;
+    top: 76.5%;
+  }
 }
 
 @media (min-width: 1900px) {
   .grid-container {
-    height: 320vh;
+    height: 340vh;
   }
   .gridLayer:nth-child(4) .gridBlock {
     left: 26vw;
   }
-  .gridLayer:nth-child(7) .gridBlock, .gridLayer:nth-child(6) .gridBlock {
-    left: 72.5%;
+  .marquee {
+    bottom: 20%;
+  }
+  .gridLayer:nth-child(2) .gridBlock {
+    left: -12%;
+  }
+  .gridLayer:nth-child(5) .gridBlock {
+    left: 12.5%;
+    top: 59%;
+  }
+  .gridLayer:nth-child(3) .gridBlock {
+    left: 12.5%;
+  }
+  .gridLayer:nth-child(6) .gridBlock {
+    left: 68.5%;
+  }
+  .gridLayer:nth-child(7) .gridBlock {
+    left: 68.5%;
+    top: 71.5%;
+  }
+  .gridLayer:nth-child(8) .gridBlock {
+    right: 12%;
   }
 }
 
@@ -614,6 +673,9 @@
   }
   .marquee {
      bottom: 0;
+  }
+  .grid-container {
+    height: 350vh;
   }
 }
 
