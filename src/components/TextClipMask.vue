@@ -10,7 +10,7 @@
     <div class="w-full h-screen absolute flex flex-col justify-center items-center gap-[127px] top-0 left-0 z-20">
       <p class="absolute top-[9%] mo:static text-base text-center text-[rgba(255,255,255,0.80)] mo:text-2xl mo:leading-[34px] mo:tracking-[-0.6px]">누구 하나 소외되는 사람이 없는 세상을 위해,<br>
         누구나 할 수 있고,<br class="mo:hidden"> 누구나가 살아갈 환경의 제공을 위해,</p>
-      <img src="/icons/project30s.png" class="w-[270px] mo:w-[330px] absolute top-[50%] mo:static">
+      <img src="/icons/project30s.png" class="max-md:w-[200px] w-[270px] mo:w-[330px] absolute top-[50%] max-md:top-[47%] mo:static">
       <p class="absolute bottom-[9%] mo:static text-2xl leading-[34px] tracking-[-0.6px] mo:text-[32px] text-[#FFF] font-semibold mo:leading-[42px] mo:tracking-[-0.8px]">매일매일 행복할 수 있는<br class="md:hidden"> 프로젝트를 만드는 기업</p>
     </div>
   </main>

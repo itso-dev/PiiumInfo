@@ -525,7 +525,7 @@
     left: 24.5vw;
   }
   .marquee {
-    bottom: 0;
+    bottom: 54px;
   }
 }
 
@@ -712,7 +712,7 @@
   .sw1 .swiper-wrapper {
     margin-left: 900px;
   }
-  
+
   .sw2 .swiper-wrapper {
     margin-left: 2000px;
   }
