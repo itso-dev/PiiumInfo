@@ -514,6 +514,43 @@
   margin-left: 1000px;
 }
 
+/* 파트너 & 고객사 */
+.pnc-marquee, .pnc-marquee2 {
+  white-space: nowrap;
+  width: 100%;
+  overflow: hidden;
+  padding: 60px 0;
+}
+
+.pnc-marquee>.marquee-content {
+  animation: marquee3 15s linear infinite;
+  gap: 60px;
+  padding-left: 30%;
+}
+
+.pnc-marquee>.marquee-content>img {
+  width: 230px;
+}
+
+.pnc-marquee2>.marquee-content {
+  animation: marquee2 25s linear infinite;
+  gap: 60px;
+  padding-left: 10%;
+}
+
+.pnc-marquee2>.marquee-content>img {
+  width: 230px;
+}
+
+@keyframes marquee3 {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-300%);
+  }
+}
+
 @media (min-width: 1100px) {
   .marquee {
     bottom: -10%;
@@ -716,6 +753,10 @@
   .sw2 .swiper-wrapper {
     margin-left: 2000px;
   }
+
+  .pnc-marquee, .pnc-marquee2 {
+    padding: 40px 0;
+  }
 }
 
 @media(max-width: 768px) {
@@ -732,6 +773,12 @@
 @media(max-width: 600px) {
   .mo-box>video {
     scale: 2.5;
+  }
+  .pnc-marquee>.marquee-content>img {
+    width: 200px;
+  }
+  .pnc-marquee2>.marquee-content>img {
+    width: 200px;
   }
 }
 
