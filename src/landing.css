@@ -523,7 +523,7 @@
 }
 
 .pnc-marquee>.marquee-content {
-  animation: marquee3 15s linear infinite;
+  animation: marquee3 25s linear infinite;
   gap: 60px;
   padding-left: 30%;
 }
@@ -533,7 +533,7 @@
 }
 
 .pnc-marquee2>.marquee-content {
-  animation: marquee2 25s linear infinite;
+  animation: marquee2 40s linear infinite;
   gap: 60px;
   padding-left: 10%;
 }
