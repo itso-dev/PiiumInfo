@@ -2,6 +2,7 @@
   <div class="w-full pt-[65px] pb-[30px] flex flex-col items-center justify-center gap-5 relative">
     <img src="/icons/logo.png" class="w-[129px]">
     <div class="w-full box-border px-5 flex flex-col gap-4 ta:gap-2">
+      <b class="h-[14px] text-[#546AB8] text-xs pr-5 border-r border-[#DDD] cursor-pointer" @click="openAgree">개인정보처리방침</b>
       <div class="w-full flex flex-col gap-2 ta:flex-row ta:gap-0 items-start mo:items-center justify-center">
         <b class="text-[#767676] text-xs ta:pr-2">프로젝트서티즈</b>
         <div class="h-[14px] flex items-center gap-2.5 ta:px-2 ta:border-l ta:border-r border-[#DDD]">
@@ -31,17 +32,39 @@
     </div>
   </div>
 
+  <article class="agreeModal left-0 mi:max-w-[1080px] w-full h-screen mi:h-[95vh] bg-[#FFF] box-border pt-[60px] px-5 mo:px-12 pb-5 fixed top-0 mi:top-[2.5vh] mi:left-[50%] mi:translate-x-[-50%] z-50 flex flex-col gap-5 justify-center items-center" v-if="this.agreeModal">
+    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" fill="none"
+      class="absolute top-5 right-5 cursor-pointer" @click="closeAgree">
+      <path d="M22.7 5.2998L4.70001 23.2998" stroke="#767676" stroke-width="2" stroke-linecap="round"/>
+      <path d="M22.7 23.2998L4.70001 5.2998" stroke="#767676" stroke-width="2" stroke-linecap="round"
+      />
+    </svg>
+    <div class="flex flex-col gap-1.5 justify-center items-center">
+      <img src="/icons/logo.png" class="max-w-[80px] mo:max-w-[120px] w-full" />
+      <b class="text-[32px] leading-[42px] tracking-[-0.8px] text-[#111] mo:text-[40px] mo:leading-[52px] mo:tracking-[-1px]">개인정보처리방침</b>
+    </div>
+    <Privacy />
+  </article>
+
+  <div class="fixed top-0 left-0 w-full h-full bg-[#000] opacity-60 z-40" v-if="this.modalBg"></div>
+
   
 </template>
 
 <script>
+import Privacy from "@/components/Privacy.vue";
+
 export default {
   props: [""],
   setup() {},
-  components: {},
+  components: {
+    Privacy
+  },
   data() {
     return {
       isHovered: false,
+      agreeModal: false,
+      modalBg: false,
     };
   },
   methods: {
@@ -50,7 +73,15 @@ export default {
         top: 0,
         behavior: 'smooth' // 부드러운 스크롤 효과를 위해 추가합니다.
       });
-    }
+    },
+    openAgree() {
+      this.agreeModal = true;
+      this.modalBg = true;
+    },
+    closeAgree() {
+      this.agreeModal = false;
+      this.modalBg = false;
+    },
   },
   computed: {
     iconColor() {
