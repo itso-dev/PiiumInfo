@@ -33,9 +33,7 @@
         </div>
         <div class="gridLayer centerPiece" :class="{ expanded: isExpanded }">
           <div class="gridBlock centerBlock">
-            <video ref="mainVideo" loop="loop" muted="muted" autoplay="autoplay" playsinline>
-              <source src="/icons/main-video.mp4" type="video/mp4" />
-            </video>
+            <img src="/icons/pg2-bg.png" ref="mainVideo">
             <div class="centerText2">
               <div class="text-div">
                 <p><span>사회적경제 기업 ∙<br> 협동 조합</span>을 위한<br> 기업입니다.</p>
@@ -116,11 +114,9 @@
 
   <section class="mo-page">
     <article class="mo-page-1">
-      <video loop="loop" muted="muted" autoplay="autoplay" playsinline>
-        <source src="/icons/main-video.mp4" type="video/mp4" />
-      </video>
+      <img src="/icons/pg2-bg.png">
       <div class="centerText">
-        우리는 브랜딩 및 마케팅의<br class="lg:hidden" />
+        우리는 브랜딩 및 마케팅의<br class="xl:hidden" />
         디지털 업무를 취약계층과 나누어,<br/>
         그들이 자립할 수 있는 환경을<br class="mo:hidden"/> 만듭니다.
       </div>
@@ -140,9 +136,7 @@
 
     <article class="mo-page-2">
       <div class="mo-bigbox">
-        <video loop="loop" muted="muted" autoplay="autoplay" playsinline>
-          <source src="/icons/main-video.mp4" type="video/mp4" />
-        </video>
+        <img src="/icons/pg2-bg.png">
         <p><span>사회적경제 기업 ∙<br> 협동 조합</span>을 위한<br class="mo:hidden"> 기업입니다.</p>
         <p>비영리단체와 사회적경제 기업 ∙ 협동<br class="mo-br"> 조합을 위해<br class="hidden mo:block"> <span>브랜딩 ∙ 마케팅 ∙ 대행판매</span> 등으로<br class="hidden min-w-[480px]:block mo:hidden"> 매출 개선에 이바지 합니다.</p>
       </div>
