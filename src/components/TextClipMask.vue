@@ -2,9 +2,10 @@
   <main class="main">
     <div ref="container" class="container">
       <div ref="stickyMask" class="stickyMask">
-        <video loop="loop" muted="muted" autoplay="autoplay" playsinline>
+        <!-- <video loop="loop" muted="muted" autoplay="autoplay" playsinline>
           <source src="/icons/main-video.mp4" type="video/mp4" />
-        </video>
+        </video> -->
+        <img src="/icons/main-img.png">
       </div>
     </div>
     <div class="w-full h-screen absolute flex flex-col justify-center items-center gap-[127px] top-0 left-0 z-20">
