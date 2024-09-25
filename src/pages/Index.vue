@@ -15,7 +15,7 @@
     <p class="text-xl max-md:text-lg max-sm:text-base">사회문제를 다양한 시선에서 해결책을 제시하고,<br>
       서비스를 만들어 나가고 있습니다.</p>
   </div>
-  <section class="pl-20 py-24 overflow-hidden max-xl:pl-15 max-xl:py-20 max-lg:pl-10 max-lg:pr-10 max-md:py-14 max-sm:pr-5 max-sm:pl-6"  ref="toptargetDiv">
+  <section id="about" class="pl-20 py-24 overflow-hidden max-xl:pl-15 max-xl:py-20 max-lg:pl-10 max-lg:pr-10 max-md:py-14 max-sm:pr-5 max-sm:pl-6"  ref="toptargetDiv">
     <div class="flex gap-2 justify-between align-top max-lg:flex-col">
       <div class="text-left">
         <p class="text-8xl mb-2 typo para font-semibold tracking-tightest max-2xl:text-7xl max-xl:text-6xl max-md:text-5xl max-sm:text-4xl"
@@ -70,7 +70,7 @@
       </div>
     </div>
   </section>
-  <section class="overflow-hidden relative pt-12 max-sm:pr-5 max-sm:pl-6 max-sm:hidden">
+  <section id="service-area" class="overflow-hidden relative pt-12 max-sm:pr-5 max-sm:pl-6 max-sm:hidden">
     <div id="service" class="text-left pt-12 pl-20 pb-20 top-0 left-0 mb-[-271px]" :class="{ 'fixed-layout': isFixed }">
       <p class="relative z-10 text-8xl mb-2 typo para font-semibold tracking-tightest max-2xl:text-7xl max-xl:text-6xl max-md:text-5xl max-sm:text-4xl"
          data-start-opacity="0.2" data-end-opacity="1"
@@ -264,7 +264,7 @@
       </div>
     </div>
   </section>
-  <section class="pl-20 py-24 overflow-hidden max-xl:pl-15 max-xl:py-20 max-lg:pl-10 max-lg:pr-10 max-md:py-14 max-sm:pr-5 max-sm:pl-6">
+  <section id="portfolio" class="pl-20 py-24 overflow-hidden max-xl:pl-15 max-xl:py-20 max-lg:pl-10 max-lg:pr-10 max-md:py-14 max-sm:pr-5 max-sm:pl-6">
     <div class="text-left">
       <p class="text-8xl mb-2 typo para font-semibold tracking-tightest max-2xl:text-7xl max-xl:text-6xl max-md:text-5xl max-sm:text-4xl"
          data-start-opacity="0.2" data-end-opacity="1"
@@ -279,7 +279,7 @@
     </div>
     <Portfolio />
   </section>
-  <section class="px-20 py-24 overflow-hidden max-xl:px-15 max-xl:py-20 max-lg:pl-10 max-lg:pr-10 max-md:py-14 max-sm:pr-5 max-sm:pl-6 ">
+  <section id="contact" class="px-20 py-24 overflow-hidden max-xl:px-15 max-xl:py-20 max-lg:pl-10 max-lg:pr-10 max-md:py-14 max-sm:pr-5 max-sm:pl-6 ">
     <div class="flex justify-between max-lg:flex-col gap-14">
       <div class="text-left w-1/2 max-2xl:w-[40%] max-lg:w-full">
         <p class="text-8xl mb-2 typo para font-semibold tracking-tightest max-2xl:text-7xl max-xl:text-6xl max-md:text-5xl max-sm:text-4xl"
@@ -320,9 +320,6 @@
       </div>
     </div>
   </section>
-
-
-
 </template>
 
 <script>
@@ -331,6 +328,7 @@ import gsap from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
 import AOS from 'aos';
 import "aos/dist/aos.css";
+import ServiceMo from "@/components/ServiceMo.vue";
 import Portfolio from "@/components/Portfolio.vue";
 gsap.registerPlugin(ScrollTrigger);
 
@@ -440,7 +438,7 @@ export default {
     observeTargetDiv() {
       const options = {
         root: null, // viewport를 기준으로 감지
-        rootMargin: '0px 0px -10% 0px', // bottom에 -10%를 설정하여 타겟 div의 10% 이전부터 감지
+        rootMargin: '0px 0px -3% 0px', // bottom에 -10%를 설정하여 타겟 div의 10% 이전부터 감지
         threshold: 0.3 // 타겟 div가 10% 보일 때 콜백 실행
       };
 
@@ -522,17 +520,17 @@ export default {
 }
 .horizontal-container {
   width: 300%;
-  height: calc(100% - 271px);
+  height: calc(100% - 350px);
 
   display: flex;
   flex-wrap: nowrap;
   position: relative;
-  padding-top: 271px;
+  padding-top: 350px;
 }
 
 .panel {
   width: 100%;
-  height: calc(100vh - 271px);
+  height: calc(100vh - 350px);
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
@@ -542,7 +540,7 @@ export default {
 
 .fixed-layout {
   position: fixed;
-  top: 0;
+  top: 5%;
   left: 0;
   width: 100%;
   z-index: 1000;
@@ -552,6 +550,10 @@ export default {
   border: 1px solid rgba(255, 255, 255, 0.30);
   background: rgba(37, 37, 37, 0.85);
   backdrop-filter: blur(15px);
+}
+
+#portfolio{
+  margin-top: 180px;
 }
 input:focus,
 input:active
@@ -565,15 +567,15 @@ textarea:focus{
 }
 @media screen and (max-height: 965px) {
   #service{
-    margin-bottom: -180px;
+    margin-bottom: -220px;
     padding-top: 15px;
   }
   .horizontal-container {
-    height: calc(100% - 180px);
-    padding-top: 180px;
+    height: calc(100% - 220px);
+    padding-top: 220px;
   }
   .panel {
-    height: calc(100vh - 180px);
+    height: calc(100vh - 220px);
   }
   .panel-inner{
     padding: 30px 80px;
@@ -584,5 +586,10 @@ textarea:focus{
 }
 @media (max-width: 1250px) {
 
+}
+@media (max-width: 1024px) {
+  /*.horizontal-container{*/
+  /*  display: none;*/
+  /*}*/
 }
 </style>

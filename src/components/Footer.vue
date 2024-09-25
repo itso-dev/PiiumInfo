@@ -2,10 +2,10 @@
   <div class="bg-[#111] w-full">
     <div class="marquee-wrapper overflow-hidden py-10 border-b border-[rgba(255,255,255,0.15)] max-lg:py-8">
       <div class="marquee-text">
-        <p class="text-8xl text-white pr-32 max-lg:text-5xl">잇소는 단순히 홈페이지를 만드는 것 이상을 제안합니다.</p>
-        <p class="text-8xl text-white pr-32 max-lg:text-5xl">잇소는 단순히 홈페이지를 만드는 것 이상을 제안합니다.</p>
-        <p class="text-8xl text-white pr-32 max-lg:text-5xl">잇소는 단순히 홈페이지를 만드는 것 이상을 제안합니다.</p>
-        <p class="text-8xl text-white pr-32 max-lg:text-5xl">잇소는 단순히 홈페이지를 만드는 것 이상을 제안합니다.</p>
+        <p class="text-8xl text-white pr-32 max-lg:text-5xl">피움은 단순히 홈페이지를 만드는 것 이상을 제안합니다.</p>
+        <p class="text-8xl text-white pr-32 max-lg:text-5xl">피움은 단순히 홈페이지를 만드는 것 이상을 제안합니다.</p>
+        <p class="text-8xl text-white pr-32 max-lg:text-5xl">피움은 단순히 홈페이지를 만드는 것 이상을 제안합니다.</p>
+        <p class="text-8xl text-white pr-32 max-lg:text-5xl">피움은 단순히 홈페이지를 만드는 것 이상을 제안합니다.</p>
       </div>
     </div>
     <div class="flex justify-between items-end py-14 px-16 max-lg:py-10 max-lg:px-10 max-md:py-6 max-md:px-6 max-sm:flex-wrap max-sm:justify-center">
